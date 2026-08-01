@@ -29,7 +29,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#top" className="flex items-center gap-2 font-display text-lg font-medium text-brand-900">
-          <DragonflyMark />
+          <img src="/logo.png" alt="" className="h-9 w-9 object-contain" />
           PsicoLibélula
         </a>
 
@@ -97,18 +97,5 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </header>
-  );
-}
-
-function DragonflyMark() {
-  return (
-    <svg width="26" height="26" viewBox="0 0 48 48" aria-hidden="true">
-      <ellipse cx="14" cy="16" rx="13" ry="7" fill="#d8c9ed" transform="rotate(-18 14 16)" />
-      <ellipse cx="16" cy="26" rx="15" ry="8" fill="#bda2df" transform="rotate(-6 16 26)" />
-      <ellipse cx="34" cy="16" rx="13" ry="7" fill="#d8c9ed" transform="rotate(18 34 16)" />
-      <ellipse cx="32" cy="26" rx="15" ry="8" fill="#bda2df" transform="rotate(6 32 26)" />
-      <circle cx="24" cy="8" r="4" fill="#6a3da3" />
-      <rect x="20.5" y="10" width="7" height="26" rx="3.5" fill="#6a3da3" />
-    </svg>
   );
 }

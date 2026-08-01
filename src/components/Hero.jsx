@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { MessageCircle, Sparkles } from "lucide-react";
 import Reveal from "./Reveal";
-import Portrait from "./Portrait";
 import { whatsappLink } from "../lib/whatsapp";
 
 export default function Hero() {
@@ -57,8 +56,14 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, -14, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            className="w-full"
+            style={{ maxWidth: 420 }}
           >
-            <Portrait size={360} />
+            <img
+              src="/hero.png"
+              alt="MSc. Psi. Claudia Rodríguez, psicóloga clínica, en su consultorio"
+              className="w-full rounded-[2.5rem] shadow-xl shadow-brand-900/15"
+            />
           </motion.div>
         </Reveal>
       </div>

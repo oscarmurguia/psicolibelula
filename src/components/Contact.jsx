@@ -62,7 +62,7 @@ export default function Contact() {
           <div className="overflow-hidden rounded-3xl border border-brand-100 shadow-sm">
             <iframe
               title="Ubicación del consultorio PsicoLibélula en Sucre, Bolivia"
-              src="https://www.google.com/maps?q=Calle+La+Paz,+Sucre,+Bolivia&output=embed"
+              src="https://www.google.com/maps?q=Calle+La+Paz+401,+Sucre,+Bolivia&output=embed"
               width="100%"
               height="380"
               style={{ border: 0 }}

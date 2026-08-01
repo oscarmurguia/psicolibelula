@@ -6,7 +6,10 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
-            <p className="font-display text-lg text-brand-950">PsicoLibélula</p>
+            <div className="flex items-center gap-2">
+              <img src="/logo.png" alt="" className="h-8 w-8 object-contain" />
+              <p className="font-display text-lg text-brand-950">PsicoLibélula</p>
+            </div>
             <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-brand-500">
               Psicología clínica
             </p>
