@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Fraunces", "Georgia", serif;
+
+  --color-brand-50: #f6f3fb;
+  --color-brand-100: #ece4f6;
+  --color-brand-200: #d8c9ed;
+  --color-brand-300: #bda2df;
+  --color-brand-400: #9d76cd;
+  --color-brand-500: #8154bc;
+  --color-brand-600: #6a3da3;
+  --color-brand-700: #573286;
+  --color-brand-800: #3d2260;
+  --color-brand-900: #2a1743;
+  --color-brand-950: #180d29;
+
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1da851;
+
+  --color-blush: #f7e9ee;
+  --color-mint: #e6f3ee;
+  --color-sky: #e8eef8;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.7s ease-out both;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--color-brand-950);
+  background: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
