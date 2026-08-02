@@ -4,7 +4,7 @@ import Portrait from "./Portrait";
 
 const TRAITS = [
   { icon: GraduationCap, title: "Formación", desc: "Maestría en Psicología Clínica." },
-  { icon: Compass, title: "Enfoque", desc: "Basado en evidencia científica." },
+  { icon: Compass, title: "Enfoque", desc: "Cognitivo, conductual" },
   { icon: HandHeart, title: "Trato", desc: "Cercano, humano y sin juicios." },
 ];
 

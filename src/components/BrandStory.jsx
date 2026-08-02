@@ -54,19 +54,14 @@ export default function BrandStory() {
 
 function DragonflyArt() {
   return (
-    <motion.svg
+    <motion.img
+      src="/logo.png"
+      alt="PsicoLibélula"
       width="72"
       height="72"
-      viewBox="0 0 48 48"
+      className="object-contain"
       animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }}
       transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-    >
-      <ellipse cx="14" cy="16" rx="13" ry="7" fill="#d8c9ed" transform="rotate(-18 14 16)" />
-      <ellipse cx="16" cy="26" rx="15" ry="8" fill="#bda2df" transform="rotate(-6 16 26)" />
-      <ellipse cx="34" cy="16" rx="13" ry="7" fill="#d8c9ed" transform="rotate(18 34 16)" />
-      <ellipse cx="32" cy="26" rx="15" ry="8" fill="#bda2df" transform="rotate(6 32 26)" />
-      <circle cx="24" cy="8" r="4" fill="#6a3da3" />
-      <rect x="20.5" y="10" width="7" height="26" rx="3.5" fill="#6a3da3" />
-    </motion.svg>
+    />
   );
 }

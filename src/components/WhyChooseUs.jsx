@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 const REASONS = [
   { icon: ShieldCheck, title: "Confidencialidad total", desc: "Tu espacio seguro está garantizado en cada sesión." },
-  { icon: FlaskConical, title: "Enfoque basado en evidencia", desc: "Técnicas efectivas y actualizadas, con respaldo clínico." },
+  { icon: FlaskConical, title: "Enfoque cognitivo, conductual", desc: "Técnicas efectivas y actualizadas, con respaldo clínico." },
   { icon: HeartHandshake, title: "Acompañamiento humano", desc: "Escucha, respeto y comprensión durante todo el proceso." },
   { icon: MapPinned, title: "Presencial y remoto", desc: "Disponible en Sucre y en todo el país por videollamada." },
   { icon: UserCheck2, title: "Atención personalizada", desc: "Un plan pensado para tu historia y tus necesidades." },

@@ -26,8 +26,7 @@ export default function Hero() {
 
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-xl text-lg text-brand-800/80">
-              Te acompaño con un enfoque profesional, humano y basado en evidencia
-              científica para ayudarte a superar dificultades y construir una vida
+              Te acompaño con un enfoque cognitivo, conductual para ayudarte a superar dificultades y construir una vida
               más plena, equilibrada y significativa.
             </p>
           </Reveal>
