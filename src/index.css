@@ -4,24 +4,31 @@
   --font-sans: "Poppins", "Segoe UI", system-ui, sans-serif;
   --font-display: "Fraunces", "Georgia", serif;
 
-  --color-brand-50: #f6f3fb;
-  --color-brand-100: #ece4f6;
-  --color-brand-200: #d8c9ed;
-  --color-brand-300: #bda2df;
-  --color-brand-400: #9d76cd;
-  --color-brand-500: #8154bc;
-  --color-brand-600: #6a3da3;
-  --color-brand-700: #573286;
-  --color-brand-800: #3d2260;
-  --color-brand-900: #2a1743;
-  --color-brand-950: #180d29;
+  --color-brand-50: #fff8fb;
+  --color-brand-100: #f9ebf4;
+  --color-brand-200: #eac5f1;
+  --color-brand-300: #d9b3e4;
+  --color-brand-400: #bc8bd1;
+  --color-brand-500: #9a60b7;
+  --color-brand-600: #77339c;
+  --color-brand-700: #77339c;
+  --color-brand-800: #4f2e85;
+  --color-brand-900: #34206f;
+  --color-brand-950: #151b4e;
+
+  --color-accent: #d71976;
+  --color-accent-dark: #b71365;
+  --color-lavender: #eac5f1;
+  --color-soft-pink: #f9ddeb;
+  --color-soft-blue: #d9f0f6;
+  --color-teal: #087f9f;
 
   --color-whatsapp: #25d366;
   --color-whatsapp-dark: #1da851;
 
-  --color-blush: #f7e9ee;
-  --color-mint: #e6f3ee;
-  --color-sky: #e8eef8;
+  --color-blush: #f9ddeb;
+  --color-mint: #e7f3f3;
+  --color-sky: #d9f0f6;
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-fade-up: fade-up 0.7s ease-out both;
@@ -39,17 +46,39 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
   margin: 0;
-  color: var(--color-brand-950);
-  background: #ffffff;
+  background: #fff8fb;
   font-family: var(--font-sans);
+  color: #151b4e;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   letter-spacing: -0.01em;
+}
+
+::selection {
+  color: #151b4e;
+  background: #eac5f1;
+}
+
+:focus-visible {
+  outline: 3px solid #087f9f;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

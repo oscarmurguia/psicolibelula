@@ -10,7 +10,7 @@ export default function Footer() {
               <img src="/logo.png" alt="" className="h-8 w-8 object-contain" />
               <p className="font-display text-lg text-brand-950">PsicoLibélula</p>
             </div>
-            <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-brand-500">
+            <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-brand-700">
               Psicología clínica
             </p>
             <p className="mt-3 max-w-xs text-sm text-brand-900/70">
@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-brand-500">
+            <p className="text-xs font-semibold uppercase tracking-wide text-brand-700">
               Consultorio
             </p>
             <p className="mt-2 text-sm text-brand-900/70">
@@ -32,14 +32,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-brand-500">
+            <p className="text-xs font-semibold uppercase tracking-wide text-brand-700">
               Contacto
             </p>
             <p className="mt-2 text-sm text-brand-900/70">WhatsApp · {WHATSAPP_DISPLAY}</p>
           </div>
         </div>
 
-        <p className="mt-10 border-t border-brand-100 pt-6 text-center text-xs text-brand-900/50">
+        <p className="mt-10 border-t border-brand-100 pt-6 text-center text-xs text-brand-950/80">
           © {new Date().getFullYear()} PsicoLibélula. Todos los derechos reservados. Sucre, Bolivia
         </p>
       </div>

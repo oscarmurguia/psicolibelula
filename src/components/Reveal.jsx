@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 const variants = {
   hidden: { opacity: 0, y: 28 },
@@ -7,14 +7,16 @@ const variants = {
 
 export default function Reveal({ children, delay = 0, className = "", as = "div", once = true }) {
   const MotionTag = motion[as] ?? motion.div;
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <MotionTag
       className={className}
-      initial="hidden"
-      whileInView="show"
+      initial={shouldReduceMotion ? false : "hidden"}
+      whileInView={shouldReduceMotion ? undefined : "show"}
       viewport={{ once, amount: 0.2 }}
       variants={variants}
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </MotionTag>

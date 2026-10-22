@@ -1,74 +1,76 @@
-import { User, Users2, ClipboardList, Video } from "lucide-react";
+import { UserRound, UsersRound, Baby, HeartHandshake } from "lucide-react";
 import Reveal from "./Reveal";
 
 const SERVICES = [
   {
-    icon: User,
-    title: "Psicoterapia Individual",
-    desc: "Acompañamiento psicológico para comprender lo que sientes y construir claridad.",
-    tags: ["Adultos", "Duelo"],
+    icon: UserRound,
+    title: "Adultos",
+    desc: "Un espacio para comprender tus emociones, afrontar cambios y fortalecer tu bienestar.",
+    tags: ["Atención individual"],
     bg: "bg-sky",
   },
   {
-    icon: Users2,
-    title: "Terapia Familiar",
-    desc: "Espacio de intervención para fortalecer la comunicación, resolver conflictos y transformar la convivencia.",
-    tags: ["Familias"],
+    icon: UsersRound,
+    title: "Adolescentes",
+    desc: "Acompañamiento respetuoso para explorar emociones, autoestima y relaciones.",
+    tags: ["Desarrollo emocional"],
     bg: "bg-mint",
   },
   {
-    icon: ClipboardList,
-    title: "Evaluaciones e informes",
-    desc: "Elaboración de informes y evaluaciones psicológicas con respaldo profesional.",
-    tags: ["Colegios"],
+    icon: Baby,
+    title: "Niños",
+    desc: "Apoyo emocional adaptado a su etapa de desarrollo, con participación familiar cuando corresponde.",
+    tags: ["Acompañamiento infantil"],
     bg: "bg-blush",
   },
   {
-    icon: Video,
-    title: "Atención Virtual",
-    desc: "Consultas por videollamada, útil para todo el país o para quienes prefieren atención remota.",
-    tags: ["Bolivia"],
+    icon: HeartHandshake,
+    title: "Parejas y familias",
+    desc: "Un espacio para fortalecer la comunicación y trabajar dificultades en los vínculos.",
+    tags: ["Vínculos y convivencia"],
     bg: "bg-brand-50",
   },
 ];
 
 export default function Services() {
   return (
-    <section id="servicios" className="mx-auto max-w-6xl px-6 py-24">
-      <Reveal className="mx-auto max-w-2xl text-center">
-        <span className="text-sm font-semibold uppercase tracking-widest text-brand-600">
-          Servicios
-        </span>
-        <h2 className="mt-3 text-3xl text-brand-950 md:text-4xl">
-          Acompañamiento para cada etapa
-        </h2>
-        <p className="mt-4 text-brand-900/70">
-          Atención presencial en Sucre y virtual para todo el país.
-        </p>
-      </Reveal>
+    <section id="servicios" className="scroll-mt-20 bg-gradient-to-b from-white/70 to-soft-blue/35 py-20 md:py-24">
+      <div className="mx-auto max-w-6xl px-6">
+        <Reveal className="mx-auto max-w-2xl text-center">
+          <span className="text-sm font-semibold uppercase tracking-widest text-brand-700">
+            Servicios
+          </span>
+          <h2 className="mt-3 text-3xl text-brand-950 md:text-4xl">
+            Atención para cada etapa de la vida
+          </h2>
+          <p className="mt-4 text-brand-950/80">
+            Atención presencial en Sucre y virtual para todo el país.
+          </p>
+        </Reveal>
 
-      <div className="mt-14 grid gap-6 sm:grid-cols-2">
-        {SERVICES.map((s, i) => (
-          <Reveal key={s.title} delay={i * 0.1}>
-            <div className={`h-full rounded-2xl ${s.bg} p-7 transition-transform hover:-translate-y-1.5 hover:shadow-md`}>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/70 text-brand-700">
-                <s.icon size={24} />
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {SERVICES.map((s, i) => (
+            <Reveal key={s.title} delay={i * 0.1}>
+              <div className={`h-full rounded-3xl ${s.bg} p-6 shadow-sm shadow-brand-900/5 transition-transform hover:-translate-y-1 hover:shadow-md`}>
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/80 text-brand-800">
+                  <s.icon size={23} aria-hidden="true" />
+                </div>
+                <h3 className="mt-5 font-display text-xl text-brand-900">{s.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-brand-950/80">{s.desc}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {s.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-brand-900"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <h3 className="mt-5 font-display text-xl text-brand-950">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-brand-900/70">{s.desc}</p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {s.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full bg-white/70 px-3 py-1 text-xs font-medium text-brand-800"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        ))}
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

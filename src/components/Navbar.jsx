@@ -4,9 +4,9 @@ import { Menu, X } from "lucide-react";
 import { whatsappLink } from "../lib/whatsapp";
 
 const LINKS = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#psicologa", label: "Psicóloga" },
+  { href: "#ayuda", label: "Cómo puedo ayudarte" },
   { href: "#servicios", label: "Servicios" },
+  { href: "#psicologa", label: "Sobre Claudia" },
   { href: "#ubicacion", label: "Ubicación" },
 ];
 
@@ -33,7 +33,7 @@ export default function Navbar() {
           PsicoLibélula
         </a>
 
-        <ul className="hidden items-center gap-8 text-sm font-medium text-brand-800 md:flex">
+        <ul className="hidden items-center gap-8 text-sm font-medium text-brand-900 md:flex">
           {LINKS.map((link) => (
             <li key={link.href}>
               <a href={link.href} className="transition-colors hover:text-brand-600">
@@ -47,13 +47,14 @@ export default function Navbar() {
           href={whatsappLink()}
           target="_blank"
           rel="noreferrer"
-          className="hidden items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-transform hover:scale-105 hover:bg-whatsapp-dark md:inline-flex"
+          className="hidden items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-accent-dark md:inline-flex"
         >
           WhatsApp
         </a>
 
         <button
-          aria-label="Abrir menú"
+          aria-label={open ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={open}
           className="text-brand-900 md:hidden"
           onClick={() => setOpen((v) => !v)}
         >
@@ -87,7 +88,7 @@ export default function Navbar() {
                   href={whatsappLink()}
                   target="_blank"
                   rel="noreferrer"
-                  className="block rounded-full bg-whatsapp px-5 py-3 text-center font-semibold text-white"
+                  className="block rounded-full bg-accent px-5 py-3 text-center font-semibold text-white hover:bg-accent-dark"
                 >
                   Escríbeme por WhatsApp
                 </a>

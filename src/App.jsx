@@ -1,9 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AudienceCards from "./components/AudienceCards";
-import BrandStory from "./components/BrandStory";
-import Psychologist from "./components/Psychologist";
 import Services from "./components/Services";
+import Psychologist from "./components/Psychologist";
 import FreeSession from "./components/FreeSession";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Contact from "./components/Contact";
@@ -17,11 +16,10 @@ function App() {
       <main>
         <Hero />
         <AudienceCards />
-        <BrandStory />
-        <Psychologist />
         <Services />
-        <FreeSession />
+        <Psychologist />
         <WhyChooseUs />
+        <FreeSession />
         <Contact />
       </main>
       <Footer />
