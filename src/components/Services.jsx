@@ -1,4 +1,4 @@
-import { UserRound, UsersRound, Baby, HeartHandshake } from "lucide-react";
+import { UserRound, UsersRound, Baby, HeartHandshake, ClipboardCheck } from "lucide-react";
 import Reveal from "./Reveal";
 
 const SERVICES = [
@@ -30,6 +30,13 @@ const SERVICES = [
     tags: ["Vínculos y convivencia"],
     bg: "bg-brand-50",
   },
+  {
+    icon: ClipboardCheck,
+    title: "Informes y valoraciones psicológicas",
+    desc: "Acompaño a adultos mayores que necesitan una valoración psicológica para realizar trámites relacionados con sus bienes y propiedades, brindando una atención respetuosa y confiable, con el respaldo de una profesional registrada y habilitada ante el Ministerio de Salud.",
+    tags: ["Adultos mayores"],
+    bg: "bg-soft-pink",
+  },
 ];
 
 export default function Services() {
@@ -48,7 +55,7 @@ export default function Services() {
           </p>
         </Reveal>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((s, i) => (
             <Reveal key={s.title} delay={i * 0.1}>
               <div className={`h-full rounded-3xl ${s.bg} p-6 shadow-sm shadow-brand-900/5 transition-transform hover:-translate-y-1 hover:shadow-md`}>

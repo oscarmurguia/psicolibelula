@@ -1,4 +1,4 @@
-import { MapPin, MessageCircle, Laptop2 } from "lucide-react";
+import { MapPin, MessageCircle, Laptop2, Clock3 } from "lucide-react";
 import Reveal from "./Reveal";
 import { whatsappLink, WHATSAPP_DISPLAY } from "../lib/whatsapp";
 
@@ -17,6 +17,11 @@ const DETAILS = [
     icon: Laptop2,
     label: "Modalidad",
     value: "Presencial y virtual por videollamada",
+  },
+  {
+    icon: Clock3,
+    label: "Horario",
+    value: "Lunes a sábado, de 09:00 a 20:00",
   },
 ];
 
@@ -43,7 +48,20 @@ export default function Contact() {
                     <dt className="text-xs font-semibold uppercase tracking-wide text-brand-700">
                       {d.label}
                     </dt>
-                    <dd className="mt-0.5 text-brand-950/85">{d.value}</dd>
+                    <dd className="mt-0.5 text-brand-950/85">
+                      {d.label === "WhatsApp" ? (
+                        <a
+                          href={whatsappLink()}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="underline decoration-brand-300 underline-offset-2 hover:text-brand-700"
+                        >
+                          {d.value}
+                        </a>
+                      ) : (
+                        d.value
+                      )}
+                    </dd>
                   </div>
                 </div>
               ))}

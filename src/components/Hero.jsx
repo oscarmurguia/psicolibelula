@@ -33,8 +33,8 @@ export default function Hero() {
 
           <Reveal delay={0.1}>
             <h1 className="mt-5 max-w-xl text-4xl leading-tight text-brand-950 md:text-5xl lg:text-6xl">
-              Tu bienestar emocional{" "}
-              <span className="text-brand-700">importa.</span>
+              Psicología clínica en Sucre{" "}
+              <span className="text-brand-700">y en línea.</span>
             </h1>
           </Reveal>
 
