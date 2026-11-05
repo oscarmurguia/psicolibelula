@@ -9,7 +9,6 @@ export default function Portrait({ className = "", size = 320 }) {
         alt="MSc. Psi. Claudia Rodríguez, psicóloga clínica"
         className="absolute inset-0 h-full w-full object-cover object-top"
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/35 via-transparent to-transparent" />
       <div className="pointer-events-none absolute inset-0 rounded-[2rem] ring-1 ring-inset ring-white/20" />
     </div>
   );
