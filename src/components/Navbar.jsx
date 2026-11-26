@@ -6,7 +6,9 @@ import { whatsappLink } from "../lib/whatsapp";
 const LINKS = [
   { href: "#ayuda", label: "Cómo puedo ayudarte" },
   { href: "#servicios", label: "Servicios" },
-  { href: "#psicologa", label: "Sobre Claudia" },
+  { href: "#psicologa", label: "Sobre mí" },
+  { href: "#terapia-de-pareja", label: "Terapia de pareja" },
+  { href: "#preguntas-frecuentes", label: "Preguntas" },
   { href: "#ubicacion", label: "Ubicación" },
 ];
 
@@ -33,7 +35,7 @@ export default function Navbar() {
           PsicoLibélula
         </a>
 
-        <ul className="hidden items-center gap-8 text-sm font-medium text-brand-900 md:flex">
+        <ul className="hidden items-center gap-6 text-sm font-medium text-brand-900 lg:flex xl:gap-8">
           {LINKS.map((link) => (
             <li key={link.href}>
               <a href={link.href} className="transition-colors hover:text-brand-600">
@@ -47,7 +49,7 @@ export default function Navbar() {
           href={whatsappLink()}
           target="_blank"
           rel="noreferrer"
-          className="hidden items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-accent-dark md:inline-flex"
+          className="hidden items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-accent-dark lg:inline-flex"
         >
           WhatsApp
         </a>
@@ -55,7 +57,7 @@ export default function Navbar() {
         <button
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
           aria-expanded={open}
-          className="text-brand-900 md:hidden"
+          className="text-brand-900 lg:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X size={26} /> : <Menu size={26} />}
@@ -69,7 +71,7 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden bg-white/95 backdrop-blur-md shadow-sm md:hidden"
+            className="overflow-hidden bg-white/95 backdrop-blur-md shadow-sm lg:hidden"
           >
             <ul className="flex flex-col gap-1 px-6 pb-4 text-brand-800">
               {LINKS.map((link) => (

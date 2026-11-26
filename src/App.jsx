@@ -4,6 +4,8 @@ import AudienceCards from "./components/AudienceCards";
 import Services from "./components/Services";
 import Psychologist from "./components/Psychologist";
 import FreeSession from "./components/FreeSession";
+import CouplesTherapy from "./components/CouplesTherapy";
+import Faq from "./components/Faq";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -18,8 +20,10 @@ function App() {
         <AudienceCards />
         <Services />
         <Psychologist />
+        <CouplesTherapy />
         <WhyChooseUs />
         <FreeSession />
+        <Faq />
         <Contact />
       </main>
       <Footer />

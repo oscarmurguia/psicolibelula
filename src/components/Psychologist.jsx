@@ -4,7 +4,7 @@ import Portrait from "./Portrait";
 
 const TRAITS = [
   { icon: GraduationCap, title: "Formación", desc: "Maestría en Psicología Clínica." },
-  { icon: Compass, title: "Enfoque", desc: "Cognitivo, conductual" },
+  { icon: Compass, title: "Enfoque", desc: "Cognitivo-conductual." },
   { icon: HandHeart, title: "Trato", desc: "Cercano, humano y sin juicios." },
 ];
 
@@ -14,16 +14,22 @@ export default function Psychologist() {
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 md:grid-cols-2">
         <Reveal className="order-2 md:order-1">
           <span className="text-sm font-semibold uppercase tracking-widest text-brand-700">
-            Sobre Claudia
+            Sobre mí
           </span>
           <h2 className="mt-3 text-3xl text-brand-950 md:text-4xl">
-            MSc. Psi. Claudia Rodríguez
+            Claudia Rodríguez, psicóloga clínica en Sucre
           </h2>
           <p className="mt-1 text-sm font-medium uppercase tracking-wide text-brand-700">
-            Psicóloga clínica
+            MSc. Psi. · Enfoque cognitivo-conductual
           </p>
 
           <p className="mt-6 leading-relaxed text-brand-950/80">
+            Soy Claudia Rodríguez, psicóloga clínica con maestría en
+            Psicología Clínica y enfoque cognitivo-conductual. Atiendo a
+            adultos, adolescentes, niños, parejas y familias, de forma
+            presencial en Sucre y virtual para todo Bolivia.
+          </p>
+          <p className="mt-4 leading-relaxed text-brand-950/80">
             Mi trabajo combina el rigor de la evidencia científica con un trato
             profundamente humano. Cada persona llega con una historia
             distinta, y mi labor es crear el espacio donde esa historia pueda
